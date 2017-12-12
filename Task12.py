@@ -1,9 +1,20 @@
-from flask import Flask 
+from flask import Flask
+import requests
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return '1.Leanne Graham \n 2.Ervin Howell 3.Clementine Bauch 4.Patricia Lebsack 5.Chelsey Dietrich 6.Mrs. Dennis Schulist 7.Kurtis Weissnat 8.Nicholas Runolfsdottir V 9.Glenna Reichert 10.Clementina DuBuque'
+def home():
+    return '<h1>Hey!!!I am Akash!</h1>'
 
-if __name__== "__main__":
-    app.run()
+@app.route('/authors', methods=['GET'])
+def authors():
+    data = requests.get('https://jsonplaceholder.typicode.com/users').json()
+    posts = requests.get('https://jsonplaceholder.typicode.com/posts').json()
+    users = {d['id']:{'name':d['name'],'count':0} for d in data}
+    for post in posts:
+        users[post['userId']]['count']+=1
+    return render_template('authors.html',users=users)
+
+
+if __name__ == "__main__":
+   app.run(debug=True)
