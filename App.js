@@ -43,7 +43,7 @@ class App extends Component {
 Notifications</a>&emsp;<span class="glyphicon glyphicon-envelope"></span><a href="www.twitter.com">
   Messages</a></h3></div>}
    iconElementRight={ <div id="Abheader2"><input type="text" placeholder="Search Twitter" id="searchbox"/>
-<a src="adhaar.html"><button type="submit" id="b2"><span class="glyphicon glyphicon-search" id="searchicon"></span></button></a>&emsp;&emsp;
+<a href="adhaar.html"><button type="submit" id="b2"><span class="glyphicon glyphicon-search" id="searchicon"></span></button></a>&emsp;&emsp;
     <Avatar
           src="pic1.jpg"
           size={40}
