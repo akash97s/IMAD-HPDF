@@ -16,34 +16,40 @@ import {
   orange200,
   purple500,
   white,
+  black,
+  blue100
 } from 'material-ui/styles/colors';
 
 
 class App extends Component {
 
   render() {
-    const style1 = {marginTop:15};
+    const style1 = {marginLeft:10};
+    const style2 = {marginTop:10,marginLeft:10};
     const stylemain={ backgroundColor:white,
       height:75
     };
-    const style3={ marginTop:20
+    const style3={ marginTop:30,width:35,height:30
     };
+    const style4={ width:600,height:80,backgroundColor:'#D5F5E3'
+    };
+  const style5= {marginTop:-28,marginLeft:10,border:25,borderColor:white};
 
     return (
       <MuiThemeProvider>
       <div id="div1">
 
       <AppBar
-  iconElementLeft={ <div id="Abheader1"><h3>&emsp;&emsp;<ActionHome color={blue300} style={style3} />
-  <a href="www.twitter.com">Home</a>&emsp;<a href="www.twitter.com"><Badge
+  iconElementLeft={ <div id="Abheader1"><h3>&emsp;&emsp;<ActionHome color={black}  style={style3} />&emsp;
+  <a href="www.twitter.com">Home</a><Badge
     badgeContent={10}
     primary={true}
     badgeStyle={{top:25, right:25}}
-    ><IconButton tooltip="Notifications"><NotificationsIcon/></IconButton></Badge>
-Notifications</a>&emsp;<span class="glyphicon glyphicon-envelope"></span><a href="www.twitter.com">
+    ><IconButton tooltip="Notifications"><NotificationsIcon/></IconButton></Badge><a href="www.twitter.com">
+Notifications</a>&emsp;<span class="glyphicon glyphicon-envelope"></span>&emsp;<a href="www.twitter.com">
   Messages</a></h3></div>}
    iconElementRight={ <div id="Abheader2"><input type="text" placeholder="Search Twitter" id="searchbox"/>
-<a href="adhaar.html"><button type="submit" id="b2"><span class="glyphicon glyphicon-search" id="searchicon"></span></button></a>&emsp;&emsp;
+<a href="Adhaar.js"><button type="submit" id="b2"><span class="glyphicon glyphicon-search" id="searchicon"></span></button></a>&emsp;&emsp;
     <Avatar
           src="pic1.jpg"
           size={40}
@@ -52,9 +58,15 @@ Notifications</a>&emsp;<span class="glyphicon glyphicon-envelope"></span><a href
      <br/>
      <div id="maindiv1">
   <div id="div2">
-        <center><h2>Akash Selvakumar</h2><h4 id="profh1">@Akash__Selva</h4>
-        <h4 id="profh2">Tweets&emsp;Following&emsp;Followers</h4></center>
-        <h5 id="profh3">&emsp;&emsp;0&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;15&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;10</h5>
+  <div id="div2cp">
+  <h5>Cover Pic</h5>
+  </div><Avatar
+          src="pic1.jpg"
+          size={50}
+          style={style5}/>
+        <center><h3>&emsp;&emsp;Akash Selvakumar</h3><h4 id="profh1">@Akash__Selva</h4></center><br/>
+        <h5 id="profh2">&emsp;&emsp;&emsp;Tweets&emsp;&emsp;Following&emsp;&emsp;Followers</h5>
+        <h5 id="profh3">&emsp;&emsp;&emsp;&emsp;0&emsp;&emsp;&emsp;&emsp;&emsp;15&emsp;&emsp;&emsp;&emsp;&emsp;10</h5>
       </div>
       <br/>
       <div id="div3">
@@ -76,12 +88,23 @@ Notifications</a>&emsp;<span class="glyphicon glyphicon-envelope"></span><a href
 <div id="maindiv2">
       <div id="div4">
 <div id="subdiv4">
-<center><input type="text" id="text1" placeholder=" What's happenings?"/></center>
+<AppBar iconElementLeft={<Avatar
+      src="pic1.jpg"
+      size={40}
+      style={style2}/>} iconElementRight={<div id="divWh"><input type="text" id="text1" placeholder=" What's happenings?"/></div>} style={style4}
+showMenuIconButton="false" />
 </div>
-<h3>Chennai Super Kings @CSKOFFICIAL</h3>
-<h5>VB picks his all time Csk XI Whats your choice?#WhistlePodu</h5><br/>
-<img src="csk.jpg" height="350px" width="500px"/>
+<h2 id="div4h1">Chennai Super Kings <a href="/">@CSKOFFICIAL</a></h2>
+<h4 id="div4h">VB picks his all time Csk XI Whats your choice?</h4><p id="div4p">&emsp;#WhistlePodu</p><br/>
+<img src="csk.jpg" height="350px" width="595px"/>
+<br/>
+<div id="div4icons">
+<a href="/"><img src="like1.png" height="30px" width="35px"/><b>Like</b></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<a href="/"><img src="comment.jpg" height="30px" width="25px"/><b>Comment</b></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<a href="/"><img src="retweet.jpg" height="30px" width="25px"/><b>Share</b></a>
+</div>
       </div>
+
       </div>
       <div id="maindiv3">
       <div id="div5">
@@ -109,5 +132,4 @@ Developers
     );
   }
 }
-
 export default App;
