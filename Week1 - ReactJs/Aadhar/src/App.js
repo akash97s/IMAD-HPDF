@@ -110,7 +110,7 @@ style={style7} showMenuIconButton="false" />
 <Card style={style6}>
 <center><img src="2.jpg" height="250px" width="500px"/>
 <CardText>
-      <b>CSK is back for IPL 2018 <br/>Retained: M S Dhoni , Suresh Raina and Ravidra Jadeja</b>
+      <b>CSK is back for IPL 2k18 <br/>Retained: M S Dhoni , Suresh Raina and Ravidra Jadeja</b>
     </CardText>
 </center>
 </Card>
