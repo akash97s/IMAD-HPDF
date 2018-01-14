@@ -148,7 +148,7 @@ style={style7} showMenuIconButton="false" />
 <Card style={style6}>
 <center><img src="5.jpg" height="250px" width="500px"/>
 <CardText>
-      <b>Chennayin face anothr tough challenge<br/>Dont miss the epic clash tonight</b>
+      <b>Chennayin face another tough challenge<br/>Dont miss the epic clash tonight</b>
     </CardText>
 </center>
 </Card>
