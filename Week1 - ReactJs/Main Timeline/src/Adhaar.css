@@ -1,0 +1,169 @@
+#maindiv
+{
+  font-family: 'Roboto', sans-serif;
+    background-color:#e6ecf0;
+}
+#maindiv2
+{
+  background-color:#e6ecf0;
+  height:900px;
+  width:1330px;
+}
+#searchbox
+{
+  border-radius:20px;
+  color:black;
+  display:inline-block;
+  background-color:#e6ecf0;
+  padding: 5px 5px;
+  border:none;
+
+}
+#searchbox:hover
+{
+    display: inline-block;
+    border: 2px solid #00aced;
+    box-sizing: border-box;
+    background-color:lightgray;
+}
+
+#b2
+{
+  background-color:transparent;
+  border-radius:8px;
+  cursor:pointer;
+  margin-right:30px;
+  border:none;
+}
+#div1
+{
+  background-color:#00aced;
+  color:white;
+  height:150px;
+  width:100%;
+}
+#div1 h3
+{
+  margin-left:80px;
+  font-weight:60px;
+}
+#abh1
+{
+  font-family:"Segoe UI",Arial,sans-serif;
+}
+#icon1
+{
+  margin-top:-7px;
+  height:20px;
+  weight:20px;
+}
+#Abh2
+{
+  color:grey;
+  font-family:"Segoe UI",Arial,sans-serif;
+  float:left;
+}
+#abh2
+{
+  float:left;
+}
+#Ab2h1 a
+{
+  color:#566573;
+  padding-top:-25px;
+  font-weight:40px;
+  margin-left:1px;
+}
+#Ab2
+{
+  margin-top:14px;
+}
+#Abh1 a
+{
+  color:#566573;
+}
+#div2
+{
+  height:750px;
+    width:305px;
+      background-color:#e6ecf0;
+      float:left;
+        margin-left:70px;
+}
+#div3
+{
+  height:850px;
+  width:550px;
+  background-color:#e6ecf0;
+  float:left;
+    margin-left:10px;
+
+}
+#div4
+{
+  margin-left:10px;
+  height:250px;
+    width:300px;
+      background-color:#e6ecf0;
+      float:left;
+        margin-top:-8px;
+}
+#subdiv1
+{
+  height:275px;
+    width:300px;
+      background-color:white;
+      margin-left:2px;
+      margin-top:1px;
+      padding:5px 15px;
+}
+#subdiv2
+{
+  height:435px;
+    width:300px;
+      background-color:white;
+      margin-left:2px;
+      margin-top:-15px;
+      padding:5px 15px;
+}
+#subdiv3
+{
+  height:630px;
+    width:545px;
+      background-color:white;
+      margin-left:2px;
+      margin-top:1px;
+      padding:5px;
+}
+#subdiv3 sb3h1
+{
+  color:black;
+  text-decoration:none;
+}
+
+#subdiv4
+{
+  height:230px;
+  width:295px;
+  background-color:white;
+  margin-left:2px;
+  margin-top:5px;
+}
+.trendsh1
+{
+  color:#00aced;
+}
+.trendsh2
+{
+  color:grey;
+}
+#copyrightsh1
+{
+ color:grey;
+ padding:10px;
+}
+#posticons h5
+{
+  float:right;
+  margin-top:70px;
+}
