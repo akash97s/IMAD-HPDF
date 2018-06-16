@@ -105,7 +105,7 @@ return (
       style={style2}/>} iconElementRight={<div id="divWh"><input type="text" id="text1" placeholder=" What's happenings?"/></div>}
 style={style7} showMenuIconButton="false" />
 </div>
-<h2 id="div4h1">Chennai Super Kings <a href="/">@CSKOFFICIAL</a></h2>
+<h2 id="div4h1">Chennaissss Super Kings <a href="/">@CSKOFFICIAL</a></h2>
 <h4 id="div4h">The kings are back</h4><p id="div4p">&emsp; #WhistlePodu #BleedYellow #RoaroftheLions #Chepauk</p><br/>
 <Card style={style6}>
 <center><img src="2.jpg" height="250px" width="500px"/>
