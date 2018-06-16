@@ -13,6 +13,16 @@ import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import IconMenu from 'material-ui/IconMenu';
+import Like from 'material-ui/svg-icons/action/thumb-up';
+import Comment from 'material-ui/svg-icons/communication/comment';
+import Home from 'material-ui/svg-icons/action/home';
+import Retweet from 'material-ui/svg-icons/av/repeat';
+import Moments from 'material-ui/svg-icons/image/flash-on';
+import MailO from 'material-ui/svg-icons/communication/mail-outline';
+import Chat from 'material-ui/svg-icons/communication/chat-bubble-outline';
+import Mail from 'material-ui/svg-icons/content/mail';
+import Love from 'material-ui/svg-icons/action/favorite-border';
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 
 import {
   blue300,
@@ -20,23 +30,28 @@ import {
   orange200,
   purple500,
   white,
+  black,
 } from 'material-ui/styles/colors';
 
 class App extends Component {
 
   render()
   {
-  const stylemain={ backgroundColor:white,height:45};
+  const stylemain={ backgroundColor:white,height:45,top:0};
   const style2={ marginRight:20,marginTop:-12};
   const style3={ marginRight:20,marginTop:-12};
-  const style4={ backgroundColor:white,height:45,color:'#85929E' };
+  const style4={ backgroundColor:white,height:45,color:'#85929E'};
   const style6={marginLeft:10};
   const style1={marginTop:50,marginLeft:10};
+  const style7={ height:410,width:500,marginLeft:10};
+  const iconStyles= { height:30,width:25};
+  const style8= { marginLeft:2};
+  const pt= {backgroundColor:'#00aced' };
+  const style9= { color:blue300};
 
     return (
       <MuiThemeProvider>
       <div id="maindiv">
-      <div id="div1">
       <AppBar
         iconElementLeft={ <div id="Abh1"><h4>&emsp;&emsp;&emsp;&emsp;<img src="Twitterbird.jpg" id="icon1"/>&emsp;
         <a href="www.twitter.com">Home</a>&emsp;&emsp;<a href="www.twitter.com">
@@ -48,8 +63,8 @@ class App extends Component {
           <MenuItem value={2} primaryText="Sign-up" />
           <MenuItem value={3} primaryText="Guest" />
         </DropDownMenu></div>}
-         style={stylemain} showMenuIconButton="false"  />
-<h3>aadhaar</h3>
+         style={stylemain} showMenuIconButton="true"  />
+<div id="div1"><h3 id="pt">adhaar</h3></div>
 <div id="Ab2">
 <AppBar
           iconElementLeft={<div id="Ab2h1"><h5>&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -60,10 +75,13 @@ class App extends Component {
   Videos</a>&emsp;&emsp;<a href="www.twitter.com">
 News</a>&emsp;&emsp;<a href="www.twitter.com">
 Broadcast</a></h5></div> }
-iconElementRight={<IconButton><MoreVertIcon /></IconButton>} style={style4}
-        />
+iconElementRight={<div id="Ab2h2"><IconMenu iconButtonElement={<IconButton><MoreVertIcon /></IconButton>} style={style2} >
+    <MenuItem value='1' primaryText="Search settings" />
+    <MenuItem value='2' primaryText="Save this seacrh" />
+    <MenuItem value='3' primaryText="Embed this search" />
+  </IconMenu></div>} style={style4}/>
 </div>
-</div>
+
 <br/>
 <div id="maindiv2">
 <div id="div2">
@@ -88,7 +106,7 @@ iconElementRight={<IconButton><MoreVertIcon /></IconButton>} style={style4}
 <h5 class="trendsh2">2000 tweets</h5>
 <h4 class="trendsh1">#TheTour </h4>
 <h5 class="trendsh2">1000 tweets</h5>
-<h4 class="trendsh1">#Velaikkara </h4>
+<h4 class="trendsh1">#Velaikkaran </h4>
 <h5 class="trendsh2">100 tweets</h5>
 
 </div>
@@ -103,10 +121,62 @@ iconElementRight={<IconButton><MoreVertIcon /></IconButton>} style={style4}
  activists started a website on Wednesday called speakforme.</h5>
  <div id="posticons"><Avatar
         src="Toi.jpg"
-        size={40}
+        size={50}
         style={style1}/><h5>Dec13,2017</h5>
 </div>
 </div>
+<hr/>
+
+<div id="post2">
+<h3><Avatar
+   src="Aswinpro.jpg"
+   size={50}
+   style={style8}/>&emsp;Aswin Chandran  &emsp;<a href="/">@AswinOfficial</a></h3>
+<h5>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Why ADHAAR not linked to Voter ID Card.</h5>
+<Card style={style7}>
+<center><img src="Adhaar2.jpg" height="410px" width="500px"/></center>
+</Card>
+<div id="div3icons1">
+<IconButton tooltip="Reply" touch={true} tooltipPosition="top-center" hoveredStyle={style9} >
+<Chat style={iconStyles} color={black} hoverColor={blue300} />
+</IconButton>100 &emsp;
+<IconButton tooltip="Retweet" touch={true} tooltipPosition="top-center" hoveredStyle={style9} >
+<Retweet style={iconStyles} color={black} hoverColor={blue300} />
+</IconButton>200&emsp;
+<IconButton tooltip="Like" touch={true} tooltipPosition="top-center" hoveredStyle={style9} >
+<Love style={iconStyles} color={black} hoverColor={blue300} />
+</IconButton>300&emsp;
+<IconButton tooltip="Direct Message" touch={true} tooltipPosition="top-center" hoveredStyle={style9} >
+<MailO style={iconStyles} color={black} hoverColor={blue300} />
+    </IconButton>
+    </div>
+</div>
+<hr/>
+<div id="post3">
+<h3><Avatar
+   src="Abdunpro.jpg"
+   size={50}
+   style={style8}/>&emsp; Abdun Nihaal &emsp;<a href="/">@AbdunOfficial</a></h3>
+<h5>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Link ADHAAR before Modiji visits you </h5>
+<Card style={style7}>
+<center><img src="Adhaar3.jpg" height="410px" width="500px"/></center>
+</Card>
+<div id="div3icons2">
+<IconButton tooltip="Reply" touch={true} tooltipPosition="top-center" hoveredStyle={style9} >
+<Chat style={iconStyles} color={black} hoverColor={blue300} />
+</IconButton>100 &emsp;
+<IconButton tooltip="Retweet" touch={true} tooltipPosition="top-center" hoveredStyle={style9} >
+<Retweet style={iconStyles} color={black} hoverColor={blue300} />
+</IconButton>200&emsp;
+<IconButton tooltip="Like" touch={true} tooltipPosition="top-center" hoveredStyle={style9} >
+<Love style={iconStyles} color={black} hoverColor={blue300} />
+</IconButton>300&emsp;
+<IconButton tooltip="Direct Message" touch={true} tooltipPosition="top-center" hoveredStyle={style9} >
+<MailO style={iconStyles} color={black} hoverColor={blue300} />
+</IconButton>
+    </div>
+</div>
+
 </div>
 <div id="div4">
 <div id="subdiv4">
